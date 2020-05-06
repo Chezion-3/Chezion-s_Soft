@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/BuyCarNavigatePage/BuyCarNavigatePage",
+    "pages/UserSetting/Address/Address",
+    "pages/MainNavigatePage/MainNavigatePage",
+    "pages/UserNavigatePage/UserNavigatePage",
+    "pages/ClassifyNavigatePage/ClassifyNavigatePage",
+    "pages/LoginPage/LoginPage",
+    "pages/UserSetting/UserSetting",
+    "pages/UserSetting/Address/addAddress/addAddress",
+    "pages/UserSetting/Telephone/Telephone",
+    "pages/UserSetting/Address/editAddress/editAddress",
+    "pages/CommdityPage/CommdityPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#d81e06",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/MainNavigatePage/MainNavigatePage",
+        "text": "主页",
+        "iconPath": "image/Main.png",
+        "selectedIconPath": "image/MainSelected.png"
+      },
+      {
+        "pagePath": "pages/ClassifyNavigatePage/ClassifyNavigatePage",
+        "text": "分类",
+        "iconPath": "image/Classfiy.png",
+        "selectedIconPath": "image/ClassfiySelected.png"
+      },
+      {
+        "pagePath": "pages/BuyCarNavigatePage/BuyCarNavigatePage",
+        "text": "购物车",
+        "iconPath": "image/BuyCar.png",
+        "selectedIconPath": "image/BuyCarSelected.png"
+      },
+      {
+        "pagePath": "pages/UserNavigatePage/UserNavigatePage",
+        "text": "用户",
+        "iconPath": "image/User.png",
+        "selectedIconPath": "image/UserSelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

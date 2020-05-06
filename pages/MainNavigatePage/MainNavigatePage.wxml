@@ -1,0 +1,27 @@
+<import src="/template/Commdity.wxml" /> 
+<view class="page">
+    
+  <swiper class="section" indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="4000" duration="500">
+    <block wx:for="{{slides}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.image}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="weui-search-bar" id="searchBar" >
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box" bindtap="search">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping"
+          />  
+        </view>
+      </view>
+      <view class="nav" wx:for="{{navlist}}"wx:key="key">
+      <navigator url="{{item.url}}" class="navParts" >
+        <image src="{{item.image}}"/>
+        <text>{{item.title}}</text>
+      </navigator>
+  </view>
+    </view>
+  <template is="Commdity" data="{{goodsList}}"/>
+</view>

@@ -1,0 +1,63 @@
+<view class="page">
+    <view class='head' wx:for="{{carMsg}}" wx:key="key">
+        <view class="cart-header">
+              <icon wx:if="{{item.selected}}" type="success"color="red"
+            data-index="{{index}}"class="cart-pro-select" bindtap="selectList"/>
+            <icon wx:else type="circle"color="red"
+            data-index="{{index}}"class="cart-pro-select" bindtap="selectList"/>
+        <view class="image">
+            <image src="{{item.image}}" />
+        </view>
+        </view>
+        <view class="next">
+        <text class="title">{{item.name}}</text>
+        <text class="desc">{{item.describe}}</text>
+        <view>
+        <text class="price">{{item.totalPrice}}元</text>
+          <view class='num_change'>                
+                    <image 
+                        class='minus_icon' 
+                        hidden='{{item.num<2}}' 
+                        src='../../img/minus_icon.png' 
+                        data-index='{{index}}' 
+                        data-types='minus'  
+                        catchtap='numchangeTap'>
+                    </image>
+                    <image 
+                        class='minus_icon' 
+                        hidden='{{item.num>=2}}' 
+                        src='../../img/minus_icon_false.png'>
+                     </image>                
+                    <text class='shop_num'>{{item.num}}</text>                
+                    <image 
+                        class='add_icon' 
+                        data-index='{{index}}' 
+                        data-types='add'  
+                        catchtap='numchangeTap' 
+                        src='../../img/add_icon.png'>
+                    </image>            
+                </view>        
+        </view>
+        </view>
+       
+    </view>
+    <view class="cart-footer">
+        <icon wx:if="{{selectAllStatus}}" type="success_circle" class="total-select" color="red" bindtap="selectAll" />
+        <icon wx:else type="circle" class="total-select" color="#010" bindtap="selectAll" />
+        <text class="selAl">全选</text>
+        <text class="cart-total-price">合计:</text>
+        <text class="pricCount">{{totalPrice}}元</text>
+        <text class="pay">结算{{totalPrice}}元</text>
+    </view>
+    <view class="null {{hid?'hidden':''}}">
+        <view class="image">
+            <image src="../../image/41.png"/>
+        </view>
+        <view class="desc">
+            <text>购物车还是空的</text>
+        </view>
+        <view class="btn" bindtap="toIndex">
+            <text>到商城逛逛</text>
+        </view>
+    </view>
+</view>

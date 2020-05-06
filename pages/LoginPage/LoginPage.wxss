@@ -1,0 +1,31 @@
+/* pages/LoginPage/LoginPage.wxss */
+.image{
+  height: 150px;
+  width: 150px;
+  background-color: gainsboro;
+  border-radius: 50%;
+}
+.image_view{
+  width:100%; 
+  height:200px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.text_view{
+  width:100%; 
+  color: gray;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+text{
+  margin-top:-10%; 
+  font-size: 14px;
+}
+.login{
+  background-color: rgb(21, 174, 21);
+  color: #fff;
+  width: 80%;
+}

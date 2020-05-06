@@ -1,0 +1,18 @@
+<!--pages/UserSetting/Address/Address.wxml-->
+    <view class="addressList" wx:for="{{addressList}}" wx:key="key" >
+            <view class="head">
+                <view>
+                <text class="title">{{item.userName}}</text>
+                <text class="disc">{{item.userTelephone}}</text>
+                </view>
+                <view class="main">
+                <text class="add">{{item.province}}{{item.city}}{{item.area}}{{item.address}}</text>
+                </view>
+            </view>
+          <view class="setting" bindtap="setting">
+          <text class="change" id ="{{item.id}}">编辑</text>
+          </view>
+    </view>
+ <view class='btn-view' bindtap="addAddress">
+    <button class='btn'>新增地址</button>
+</view>

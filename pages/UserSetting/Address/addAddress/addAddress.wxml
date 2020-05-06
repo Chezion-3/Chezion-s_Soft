@@ -1,0 +1,53 @@
+<!--pages/UserSetting/Address/Address.wxml-->
+    <view class="addressList">
+            <view class="head">
+                <view>
+                <text class="title">收货人</text>
+                </view>
+            </view>
+          <view class="setting">
+          <input placeholder='姓名' bindinput="bindNameChange" value="{{name}}"></input>
+          </view>
+    </view>
+    <view class="addressList">
+            <view class="head">
+                <view>
+                <text class="title">联系方式</text>
+                </view>
+            </view>
+          <view class="setting">
+          <input placeholder='手机号码' bindinput="bindteleChange" value="{{telephone}}" maxlength="11" type="number"></input>
+          </view>
+    </view>
+     <view class="addressList">
+            <view class="head">
+                <view>
+                <text class="title">所在地区</text>
+                </view>
+            </view>
+          <view class="setting">
+         <picker
+            mode="region"
+            bindchange="bindPickerChange"
+            value="{{region}}"
+            custom-item="{{customItem}}"
+            style="flex: 1"
+            
+        >  
+        <view class="picker">
+            {{region[0]}}{{region[1]}}{{region[2]}}
+        </view>
+    </picker>
+          </view>
+    </view>
+<view class="addressList">
+            <view class="head">
+                <view>
+                <text class="title">详细地址</text>
+                </view>
+            </view>
+          <view class="setting">
+          <input placeholder='详细地址需填写楼栋楼层或房间号' bindinput="bindAddChange" value="{{address}}"></input>
+          </view>
+    </view>
+    <button class='btn' bindtap="OK">确认</button>

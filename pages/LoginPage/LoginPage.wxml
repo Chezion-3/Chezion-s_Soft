@@ -1,0 +1,6 @@
+<!--pages/LoginPage/LoginPage.wxml-->
+<view class="image_view">
+  <image src="https://www.chezion.cn/image/touxiang.png" class="image"></image>
+</view>
+<view class="text_view"><text>未登录，请先登录</text></view>
+ <button open-type="getUserInfo" class="login" bindgetuserinfo="doLogin">微信一键登录</button> 

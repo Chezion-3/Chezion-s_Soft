@@ -1,0 +1,75 @@
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <image src="{{avatar}}" class="avatar">
+      </image>
+    </view>
+    <button class="login">{{account}}</button>
+
+    <view class="user_setting" bindtap="setting">
+    <image class="setting" src="../../image/setting.png" ></image>
+    <text style="font-size:0.8rem;">管理账号</text>
+    </view>
+  </view>
+ <view class="weui-search-bar" id="searchBar" >
+<view class="nav" wx:for="{{navlist}}"wx:key="key">
+ <!-- 第一排分页导航 -->
+      <navigator url="{{item.url}}" class="navParts" >
+        <image src="{{item.image}}"/>
+        <text>{{item.title}}</text>
+      </navigator>
+  </view>
+</view>
+<view class="weui-search-bar" id="searchBar" >
+<view class="nav">
+     <!-- 第二排分页导航 -->
+      <navigator url="" class="userParts" >
+       <text class = "collect_text" style=" padding-top: 10px;color:#d81e06;">{{money}}元</text>
+       <text class="collect_title">账户余额</text>
+      </navigator>
+      
+      <navigator url="{{item.url}}" class="userParts" >
+       <text class = "collect_text" style=" padding-top: 10px;color:#d81e06;">0元</text>
+       <text class="collect_title">红包</text>
+      </navigator>
+      
+      <navigator url="{{item.url}}" class="userParts" >
+       <text class = "collect_text" style=" padding-top: 10px;color:#d81e06;">0</text>
+       <text class="collect_title">积分</text>
+      </navigator>
+       <navigator url="{{item.url}}" class="userParts" >
+       <text class = "collect_text" style=" padding-top: 10px;color:#d81e06;">0张</text>
+       <text class="collect_title">商品券</text>
+      </navigator>
+      <navigator url="{{item.url}}" class="userParts" >
+       <image src="../../image/wallet.png"/>
+       <text class="collect_title">我的资产</text>
+      </navigator>
+  </view>
+</view>
+<view class="weui-search-bar" id="searchBar" >
+<view class="nav">
+      <!-- 最后一排分页导航 -->
+      <navigator url="" class="collectParts" >
+       <text class = "collect_text" style=" padding-top: 10px;">{{commodityCollectionNum}}</text>
+       <text class="collect_title">商品收藏</text>
+      </navigator>
+      
+      <navigator url="{{item.url}}" class="collectParts" >
+       <text class = "collect_text" style=" padding-top: 10px;">{{brandCollectionNum}}</text>
+       <text class="collect_title">店铺收藏</text>
+      </navigator>
+      
+      <navigator url="{{item.url}}" class="collectParts" >
+       <text class = "collect_text" style=" padding-top: 10px;">{{orderNum}}</text>
+       <text class="collect_title">订单数量</text>
+      </navigator>
+      
+      <navigator url="{{item.url}}" class="collectParts" >
+       <text class = "collect_text" style=" padding-top: 10px;">{{footprintNum}}</text>
+       <text class="collect_title">我的足迹</text>
+      </navigator>
+  </view>
+</view>
+ 
+</view>

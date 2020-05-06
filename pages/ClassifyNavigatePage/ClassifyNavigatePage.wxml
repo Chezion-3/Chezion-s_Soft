@@ -1,0 +1,25 @@
+<view class="main">
+    <scroll-view class="category-left" scroll-y="true">
+        <view class="cate-list {{curIndex===index?'on':''}}" wx:for="{{category}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-index="{{index}}"
+            bindtap="switchCategory">
+            <text>{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>
+<view class="category-right">
+        <text class="line1"></text>
+        <text class="line2"></text>
+    <scroll-view scroll-y="true" class="category-right" scroll-into-view="{{toView}}">
+        <block wx:for="{{detail}}" wx:key="{{item.id}}" >
+            <view class="cat-title" id="{{item.id}}">
+                <text class="Ttitle">{{item.Ttitle}}</text>
+                <view class="product"bindtap="toDetail"data-index="{{index}}">
+                    <view class="pro-desc" >
+                        <image class="pro-image" src="{{item.image}}"/>
+                        <text class="pro-desc1">{{item.desc1}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

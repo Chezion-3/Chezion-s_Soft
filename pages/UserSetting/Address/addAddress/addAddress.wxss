@@ -1,0 +1,38 @@
+/* pages/UserSetting/Address/Address.wxss */
+.addressList{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  margin-top: 3%;
+  border-bottom: solid 1px #ebebeb;
+  height: 32px;
+}
+.head{
+  margin-left: 3%;
+  width: 25%;
+}
+.setting{
+  width: 80%;
+  height: 100%;
+}
+.title{
+  font-size: 15px;
+  margin-right:10px; 
+}
+.add{
+
+}
+.disc{
+  font-weight:bold;
+}
+.change{
+ 
+  color:#d81e06;
+}
+.btn{
+ margin-top: 5%;
+ background-color:#d81e06;
+ color: white;
+ width: 90%;
+}/* pages/UserSetting/Address/addAddress/addAddress.wxss */

@@ -1,0 +1,149 @@
+.page{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 235, 235);
+}
+.head{
+  width: 100%;
+  background: #fff;
+  margin-top: 10rpx;
+  height:200rpx;
+  display: flex;
+}
+.cart-header{
+   
+    display: flex;
+    width: 32%;
+    height:200rpx;
+    align-items: center
+}
+.cart-header .image image{
+    display: inline-block;
+    height: 150rpx;
+    width: 150rpx;
+    /* background: #000; */
+    margin-left: 10px;
+}
+.next{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+    font-size: 30rpx;
+    line-height: 80rpx;
+    margin-left: 30rpx;
+    width: 800px;
+    overflow: hidden;
+}
+.desc{
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(109, 106, 106); 
+}
+.price{
+  margin-left: 30rpx;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    right: 10rpx;
+    color: red;
+}
+.cart-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding:0 100rpx 0 80rpx;
+    box-sizing: border-box;
+    color: rgb(39, 37, 37);
+    background: #fff;
+    border-top:0.3px solid rgb(204, 202, 202) ;
+    box-sizing: border-box
+}
+.total-select{
+    position: absolute;
+    left: 20rpx;
+    top: 25rpx;
+    width: 30rpx;
+    height: 30rpx;
+
+}
+.selAl{
+    font-size: 30rpx;
+}
+.order-icon{
+    position: absolute;
+    right: 40rpx;
+    top: 25rpx;
+    width: 45rpx;
+    height: 45rpx;
+    background-size: 100%;
+}
+.cart-total-price{
+    display: inline-block;
+    margin-left: 185rpx;
+}
+.pricCount{
+    color: red;
+    margin-left: 10rpx;
+    font-size: 30rpx;
+}
+.pay{
+    display: inline-block;
+    background: rgb(238, 68, 68);
+    height: 90rpx;
+    width: 200rpx;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 32rpx;
+}
+.null{
+    margin-top: 100rpx;
+    overflow: hidden;
+}
+.null .image image{
+    width: 100rpx;
+    height: 100rpx; 
+   
+}
+.null .image{
+    width: 200rpx;
+    height: 200rpx;
+    background: rgb(201, 199, 199);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.null .desc{
+    width: 400rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    /* background: rgb(219, 192, 192); */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50rpx;
+}
+.null .btn {
+    width: 580rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background:rgb(238, 68, 68);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50rpx;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,139 @@
+.page{
+}
+  .section{
+      width: 100%;
+      height: 400rpx;
+  }
+.section image{
+  width: 100%;
+  height: 100%;
+}
+.weui-search-bar{
+  background: #fff;
+  border: 5%;
+  height: 5%;
+  margin: 2%;
+  margin-top:5%; 
+}
+.weui-search-bar__form{
+  border-radius: 30rpx;
+  position:relative;
+  -webkit-box-flex:1;
+  -webkit-flex:auto;
+  flex:auto;
+  background:rgb(240, 237, 237);
+  border:1rpx solid #e6e6ea
+}
+.weui-search-bar__box{
+  left: 50%;
+  /* transform: translateX(-10%) */
+}
+.nav{
+  display: inline-block;
+}
+.nav .navParts{
+  height: 140rpx;
+  width:140rpx;
+  background: #fff;
+  box-sizing: border-box;
+
+}
+.nav .navParts image{
+  display: block;
+  height: 55rpx;
+  width: 55rpx;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+  padding-top: 30rpx;
+ 
+}
+.nav .navParts text{
+  display: flex;
+  justify-content: center;
+  font-size: 25rpx;
+  color: rgb(34, 34, 34);
+  margin-top: 10rpx;
+}
+.goodsList{
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  width: 370rpx;
+  margin-left: 5rpx;
+
+}
+.goodsList .ListButton{
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  
+}
+.goodsList .ListButton image{
+  width: 370rpx;
+  height: 400rpx;
+  margin-right: 5rpx;
+  border-top-left-radius:5%;
+  border-top-right-radius:5%;
+}
+.goodsList .block{
+  display: block;
+  width: 750rpx;
+  height: 100rpx;
+}
+.goodsList .imgbut{
+  margin-left: 10rpx;
+}
+.goodsList .block .imgbut{
+  background: #fff;
+}
+.goodsList .block image{
+  display: block;
+  width: 750rpx;
+  height: 500rpx;
+  
+}
+.goodsList .ListButton .title,.disc{
+  /* display: flex; */
+  /* display: block; */
+  /* font-size: 25rpx; */
+  color: rgb(34, 34, 34);
+  /* margin-top: 10rpx;  */
+  padding-left: 25rpx;
+  box-sizing: border-box;
+}
+
+ .pric{
+  display: inline-block;
+  /* padding-left: 20rpx; */
+  box-sizing: border-box
+}
+.title{
+  font-size: 30rpx;
+  color: #000;
+}
+.disc{
+  font-size: 25rpx;
+  color: rgb(109, 106, 106);
+}
+.pric{
+  font-size: 30rpx;
+  color: red;
+  margin-left: 15rpx;
+}
+view{
+  display: block;
+}
+.weui-search-bar__input{
+  height:28px;
+  line-height:28px;
+  font-size:14px;
+  margin-left: 8%;
+}
+.weui-icon-search_in-box{
+  position:absolute;
+  top:7px;
+  margin-left: 3%;
+}

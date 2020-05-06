@@ -1,0 +1,229 @@
+/* pages/page1/page1.wxss */
+
+.backgournd{}
+.login{
+   color: black;
+   background-color: #fff;
+   margin-top: 5.5%;
+}
+.login::after{
+ 
+  border: none;
+  
+}
+.button1::after{
+  border: none;
+}
+.avatar {
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    margin-left:5%;
+    margin-top: 3%;
+}
+.text{
+  margin-top:25%; 
+  margin-bottom: 0%;
+   color: skyblue;
+   display: flex;
+}
+/*输入框的样式 */
+.input1{
+  background-color: lightgray;
+  height:32px;
+  border-style: solid ;
+  border-color: lightgray;
+  border-radius:9px;
+  width: 80%;
+  margin-left: 14%;
+  margin-top: -7%;
+}
+/*每一行输入框前的名称的样式 */
+.view1{
+  margin-top:20px; 
+  margin-left:10px;
+
+}
+/*登陆按钮的样式 */
+.button1{
+  
+  height:45px;
+  background-color:white;
+  margin-top: 20%;
+  /* display:flex;  */
+  font-size:12px;
+
+  
+}
+/*注册按钮的样式 */
+.button2{
+   width: 45%;
+  height:40px;
+  background-color: rgb(35, 201, 85);
+  margin-top: 30px;
+  float:right;
+  margin-right: 5%;
+}
+/*按住登陆按钮的样式 */
+.button1_hover{
+
+background-color: lightgray;
+
+}
+/*分区选择框的样式 */
+.picker{
+ background-color: lightgray;
+  height:32px;
+  border-style: solid ;
+  border-color: lightgray;
+  border-radius:9px;
+  width: 80%;
+  margin-left: 14%;
+  margin-top: -8%;
+}
+page{
+
+
+
+}/* pages/loginPage/loginPage.wxss */
+.user {
+  width: 725rpx;
+  height: 100px;
+  background: #ffffff;
+  padding: 30rpx 25rpx 30rpx 0;
+  margin: 15rpx 0 0 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+.user1{
+  margin: -10rpx 0 0 0 ;
+  height: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx 15rpx 35rpx 18rpx;
+
+}
+.user .userinfo-avatar{
+  flex: 1;
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 80rpx;
+}
+.user .user-info{
+  flex: 5;
+  text-align: left;
+}
+.user .user-info text{
+  display: block;
+}
+.user .user-info .userinfo-nickname{
+  padding: 8rpx 0 10rpx 0;
+  font-size: 30rpx;
+  color: #818A8F;
+}
+.user .user-info .edit{
+  font-size: 30rpx;
+  color: #bababa;
+  line-height: 34rpx;
+}
+
+/* 第一排nav */
+.nav{
+  display: inline-block;
+}
+.nav .navParts{
+  height: 150rpx;
+  width:150rpx;
+  background: #fff;
+  box-sizing: border-box;
+
+}
+.nav .navParts image{
+  display: block;
+  height: 55rpx;
+  width: 55rpx;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+  padding-top: 30rpx;
+ 
+}
+.nav .navParts text{
+  display: flex;
+  justify-content: center;
+  font-size: 25rpx;
+  color: rgb(34, 34, 34);
+  margin-top: 10rpx;
+}
+.weui-search-bar{
+  margin-top: 2%;
+}
+.setting{
+  height: 15px;
+  width: 15px;
+ 
+}
+.user_setting{
+  display: flex;
+  align-items: center;
+}
+/* 第二排的Parts */
+.nav .collectParts{
+  height: 140rpx;
+  width:187rpx;
+  background: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+/* 第三排的Parts */
+.nav .userParts{
+  height: 150rpx;
+  width:150rpx;
+  background: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+.nav .userParts text{
+  display: flex;
+  justify-content: center;
+ 
+  color: rgb(34, 34, 34);
+  margin-top: 10rpx;
+}
+.nav .collectParts text{
+  display: flex;
+  justify-content: center;
+ 
+  color: rgb(34, 34, 34);
+  margin-top: 10rpx;
+}
+.collect_text{
+  font-size: 35rpx;
+}
+.collect_title{
+  font-size: 25rpx;
+}
+.nav .collectParts image{
+  display: block;
+  height: 55rpx;
+  width: 55rpx;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+  padding-top: 10px;
+ 
+}
+.nav .userParts image{
+  display: block;
+  height: 55rpx;
+  width: 55rpx;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+  padding-top: 10px;
+ 
+}

@@ -1,0 +1,30 @@
+<!--pages/UserSetting/UserSetting.wxml-->
+<view class="my">
+    <view class="my-item flex-wrp" bindtap='address'>
+      <view class="myitem-icon flex-item" >
+       <image src="https://www.chezion.cn/image/address.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收货地址</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp" bindtap='telephone'>
+      <view class="myitem-icon flex-item">
+         <image src="https://www.chezion.cn/image/telephone.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的手机号</text>
+      </view>
+    </view>
+    
+    <view class="my-item flex-wrp" bindtap='sevice'>
+      <view class="myitem-icon flex-item">
+        <image src="https://www.chezion.cn/image/sevice.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>客户服务</text>
+      </view>
+    </view>
+   
+
+  </view>

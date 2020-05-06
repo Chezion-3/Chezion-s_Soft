@@ -1,0 +1,86 @@
+ page, .main{
+    height: 100%;
+    overflow: hidden;
+} 
+.category-left{
+    float: left;
+    width: 150rpx;
+    height: 100%;
+    border-right:1px solid #ddd;
+    box-sizing: border-box;
+}
+.category-left .cate-list.on {
+    color: rgb(219, 29, 29);
+    transform: scale(1.3)
+  }
+.category-left .cate-list {
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 86rpx;
+} 
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color:transparent;
+}
+.category-right{
+    /* float: right; */
+    height: 100%;
+    /*  */
+    /* background: #000; */
+    margin-left: 97rpx;
+    box-sizing: border-box;
+    /* padding-left: 0rpx; */
+    margin-top: -25rpx;
+}
+.category-right{
+    width: 600rpx;
+    /* display: block; */
+    position: absolute;
+    top: 35rpx;
+    /* background: #000; */
+}
+.cat-title{
+    margin-left: -50rpx;
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20rpx;
+}
+.cat-title .Ttitle{
+    /* width: 100%; */
+    display:block;
+    position: relative;
+    /* top: -15rpx; */
+    right: -210rpx;
+    width: 100%;
+}
+/* .line1,line2{
+    display: inline-block;
+    width: 100rpx;
+    height: 1px;
+    background: #000;
+} */
+.pro-desc{
+    /* display: inline-block; */
+    margin-right: 105rpx;
+    margin-left: -38rpx;
+    padding-top: 70rpx;
+    width: 133rpx;
+    height: 140rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    /* background: #000; */
+    box-sizing: border-box
+}
+.pro-desc:nth-child(3n){
+    margin-right: 0;
+}
+.product .pro-desc .pro-image{
+    display: block;
+    width: 100rpx;
+    height: 60rpx;
+}
+.product .pro-desc .pro-desc1{
+    font-size: 22rpx;
+}
